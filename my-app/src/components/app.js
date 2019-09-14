@@ -21,15 +21,14 @@ class App extends React.Component {
       if (this.state.game.length > 0) {
         return (
           <div>
-            {this.state.game.map((item) => {
+            {this.state.game.slice(0).map((item) => {
               return (
                 <Game
                   awayName={item.awayName}
                   group={item.group}
                   homeName={item.homeName}
                   name={item.name}
-                  sport={item.sport}
-                  country={item.contry} />
+                  sport={item.sport} />
               )
             })}
           </div>

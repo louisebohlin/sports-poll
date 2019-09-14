@@ -28,7 +28,7 @@ class App extends React.Component {
                   group={item.group}
                   homeName={item.homeName}
                   name={item.name}
-                  sport={item.sport} />
+                  sport={item.sport}/>
               )
             })}
           </div>
